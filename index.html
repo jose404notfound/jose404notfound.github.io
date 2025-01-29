@@ -3,87 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>José González</title>
+    <title>José González Ruiz</title>
     <style>
-        /* Estilos globales */
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #111;
-            color: #fff;
+            background-color: #f0f0f0;
             text-align: center;
-        }
-
-        /* Estilos del contenedor */
-        .container {
-            max-width: 600px;
-            margin: 50px auto;
             padding: 20px;
-            background-color: #333;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
         }
-
+        .container {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
         h1 {
-            font-size: 2.5em;
-            color: #00aaff;
+            color: #333;
         }
-
-        p {
-            font-size: 1.2em;
-            margin-bottom: 20px;
-        }
-
-        /* Enlace a LinkedIn y GitHub */
-        .linkedin-link, .github-link {
-            display: inline-block;
-            background-color: #0077b5;
-            color: white;
-            padding: 10px 20px;
-            margin: 10px 0;
-            text-decoration: none;
-            font-size: 18px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        .linkedin-link:hover, .github-link:hover {
-            background-color: #005f8c;
-        }
-
-        /* Estilo de la imagen */
         .profile-img {
-            max-width: 60%;
-            height: auto;
-            margin-top: 20px;
-            border-radius: 10px;
+            max-width: 100%;
+            border-radius: 8px;
         }
-
-        /* Espaciado adicional */
-        .spacer {
-            margin-bottom: 20px;
+        .linkedin-link, .github-link {
+            text-decoration: none;
+            color: #0077b5; /* Color de LinkedIn */
+            font-weight: bold;
+            margin-top: 10px;
+            display: inline-block;
+        }
+        .linkedin-link:hover, .github-link:hover {
+            text-decoration: underline;
+        }
+        .github-link {
+            color: #333; /* Color de texto para GitHub */
         }
     </style>
 </head>
 <body>
-
-    <!-- Contenedor principal de la página -->
     <div class="container">
-        <h1>José González</h1>
-        <p>¡Bienvenido a mi portafolio! Aquí podrás ver mi currículum y más información sobre mi perfil profesional.</p>
-
-        <!-- Enlace a LinkedIn -->
+        <h1>José González Ruiz</h1>
+        <!-- Enlaces -->
+        <p>¡Bienvenido a mi portafolio! Aquí puedes ver mi currículum y más información sobre mi perfil profesional.</p>
         <a href="https://www.linkedin.com/in/josegonzalez404" class="linkedin-link" target="_blank">Visita mi LinkedIn</a>
-
-        <!-- Enlace a GitHub -->
-        <div class="spacer"></div>
         <a href="https://github.com/jose404notfound" class="github-link" target="_blank">Visita mi GitHub</a>
-
-        <!-- Imagen del currículum -->
-        <div class="spacer"></div>
+        <!-- Currículum -->
         <img src="CV_JoseGonzalezRuiz.png" alt="Mi currículum" class="profile-img">
     </div>
-
 </body>
 </html>
