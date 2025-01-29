@@ -31,25 +31,31 @@
             text-decoration: none;
             color: #0077b5; /* Color de LinkedIn */
             font-weight: bold;
-            margin-top: 10px;
-            display: inline-block;
+            display: block;
+            margin: 10px 0; /* Espacio entre los enlaces */
+            padding: 10px;
+            background-color: #f0f0f0; /* Fondo gris claro para los enlaces */
+            border-radius: 5px; /* Esquinas redondeadas */
+            width: 200px;
+            margin-left: auto;
+            margin-right: auto;
         }
         .linkedin-link:hover, .github-link:hover {
             text-decoration: underline;
+            background-color: #e0e0e0; /* Fondo más oscuro cuando se pasa el ratón */
         }
-        .github-link {
-            color: #333; /* Color de texto para GitHub */
+        .space {
+            margin-bottom: 15px; /* Espacio entre los enlaces y la imagen */
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>José González Ruiz</h1>
-        <!-- Enlaces -->
         <p>¡Bienvenido a mi portafolio! Aquí puedes ver mi currículum y más información sobre mi perfil profesional.</p>
         <a href="https://www.linkedin.com/in/josegonzalez404" class="linkedin-link" target="_blank">Visita mi LinkedIn</a>
         <a href="https://github.com/jose404notfound" class="github-link" target="_blank">Visita mi GitHub</a>
-        <!-- Currículum -->
+        <div class="space"></div> <!-- Espacio entre los enlaces y la imagen -->
         <img src="CV_JoseGonzalezRuiz.png" alt="Mi currículum" class="profile-img">
     </div>
 </body>
