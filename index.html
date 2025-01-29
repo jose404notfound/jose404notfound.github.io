@@ -3,48 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
+    <title>José González</title>
     <style>
+        /* Estilos globales */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+            color: #fff;
             text-align: center;
-            padding: 20px;
         }
-        .container {
-            background-color: white;
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 80%;
-            max-width: 600px;
-            margin: 0 auto;
+
+        /* Estilos del encabezado */
+        header {
+            background-color: #222;
+            padding: 15px;
         }
-        h1 {
-            color: #333;
-        }
-        .profile-img {
-            max-width: 100%;
-            border-radius: 8px;
-        }
-        .linkedin-link {
+
+        header a {
+            color: #fff;
             text-decoration: none;
-            color: #0077b5;
+            margin: 0 15px;
+            font-size: 18px;
             font-weight: bold;
-            margin-top: 10px;
-            display: inline-block;
         }
-        .linkedin-link:hover {
-            text-decoration: underline;
+
+        header a:hover {
+            color: #00aaff;
+        }
+
+        /* Estilos del contenedor */
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #00aaff;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        /* Enlace a LinkedIn y GitHub */
+        .linkedin-link, .github-link {
+            display: inline-block;
+            background-color: #0077b5;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px 0;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .linkedin-link:hover, .github-link:hover {
+            background-color: #005f8c;
+        }
+
+        /* Estilo de la imagen */
+        .profile-img {
+            max-width: 80%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        /* Espaciado adicional */
+        .spacer {
+            margin-bottom: 30px;
         }
     </style>
 </head>
 <body>
+
+    <!-- Header con enlaces -->
+    <header>
+        <a href="#linkedin" class="linkedin-link">LinkedIn</a>
+        <a href="#github" class="github-link">GitHub</a>
+    </header>
+
+    <!-- Contenedor principal de la página -->
     <div class="container">
-        <h1>Mi Currículum y Perfil Profesional</h1>
-        <p>¡Bienvenido a mi página! Aquí puedes contactar conmigo en LinkedIn.</p>
-        <a href="https://www.linkedin.com/in/josegonzalez404" class="linkedin-link" target="_blank">Visita mi LinkedIn</a>
-        <img src="CV_JoseGonzalezRuiz.png" alt="Mi currículum" class="profile-img">
+        <h1>José González</h1>
+        <p>¡Bienvenido a mi portafolio! Aquí podrás ver mi currículum y más información sobre mi perfil profesional.</p>
+        
+        <!-- Enlace a LinkedIn -->
+        <a id="linkedin" href="https://www.linkedin.com/in/josegonzalez404" class="linkedin-link" target="_blank">Visita mi LinkedIn</a>
+
+        <!-- Enlace a GitHub -->
+        <div class="spacer"></div>
+        <a id="github" href="https://github.com/jose404notfound" class="github-link" target="_blank">Visita mi GitHub</a>
     </div>
+
+        <!-- Imagen del currículum -->
+        <div class="spacer"></div>
+        <img src="CV_JoseGonzalezRuiz.png" alt="Mi currículum" class="profile-img">
+
 </body>
 </html>
